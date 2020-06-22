@@ -9,11 +9,11 @@
     @csrf
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Enter email">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
     </div>
     <div class="form-group">
       <label for="description">Description</label>
-      <input type="email" class="form-control" id="description" name="description" placeholder="Enter email">
+      <input type="text" class="form-control" id="description" name="description" placeholder="Enter Description">
     </div>
     <div class="form-group">
       <label for="cover-image">Cover Image</label>

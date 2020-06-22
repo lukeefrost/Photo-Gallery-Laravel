@@ -8,7 +8,7 @@
         <a class="nav-link {{ (Request::is('/')) ? 'active' : ''}}" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item {{ (Request::is('albums/create')) ? 'active' : ''}}">
-        <a class="nav-link" href="route('album-create')">Create Album</a>
+        <a class="nav-link" href="{{ route('album-create') }}">Create Album</a>
       </li>
     </ul>
   </div>

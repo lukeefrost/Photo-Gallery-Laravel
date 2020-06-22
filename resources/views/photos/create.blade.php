@@ -7,7 +7,7 @@
 
   <form method="post" action="{{ route('photo-store') }}" enctype="multipart/form-data">
     @csrf
-    <input type="hidden" name="album-id" value="{{  }}">
+    <input type="hidden" name="album-id" value="{{ $albumId }}">
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">

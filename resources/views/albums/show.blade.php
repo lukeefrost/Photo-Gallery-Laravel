@@ -7,7 +7,7 @@
     <p class="lead text-muted">{{ $album->description }}</p>
     <p>
       <a href="{{ route('photo-create', $album->id) }}" class="btn btn-primary my-2">Upload Photo</a>
-      <a href="/" class="btn btn-secondary my-2">SGo Back</a>
+      <a href="/" class="btn btn-secondary my-2">Go Back</a>
     </p>
   </div>
 </section>
@@ -17,7 +17,7 @@
 <div class="row">
   @foreach ($album->photos as $photo)
   <div class="col-md-4">
-    <div class="card mb-4 box-shadow">
+    <div class="card mb-4 shadow-sm">
       <img src="/storage/albums/{{ $album->id }}/{{ $photo->photo}}" alt="{{ $photo->cover_image }}" height="200px">
       <div class="card-body">
         <p class="card-text">{{ $photo->description }}</p>
