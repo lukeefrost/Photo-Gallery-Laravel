@@ -43,7 +43,7 @@ class PhotosController extends Controller
 
     public function show($id)
     {
-        $photo = Photo::with('photos')->find($id);
+        $photo = Photo::find($id);
         return view('photos.show')->with('photo', $photo);
     }
 
